@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Inter;
+  src: local(Inter),
+        url("../assets/fonts/inter-v12-cyrillic_latin-500.woff2") format("woff2"),
+        url("../assets/fonts/inter-v12-cyrillic_latin-500.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local(Inter),
+        url("../assets/fonts/inter-v12-cyrillic_latin-regular.woff2") format("woff2"),
+        url("../assets/fonts/inter-v12-cyrillic_latin-regular.woff") format("woff");
+  font-weight: 400;
+}

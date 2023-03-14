@@ -1,0 +1,29 @@
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__btn {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 19px;
+  text-transform: uppercase;
+  border: 1px solid var(--main-color);
+  border-radius: 24px;
+  background-color: var(--btn-second);
+  transition: 0.3s all;
+}
+
+.header__btn:hover {
+  background-color: var(--btn-second-hover);
+  border: 1px solid var(--btn-second-hover);
+  cursor: pointer;
+}
