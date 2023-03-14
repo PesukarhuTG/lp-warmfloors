@@ -48,10 +48,21 @@
 
 .footer__svg {
   fill: var(--main-color);
+  transition: 0.3s all;
+}
+
+.footer__svg:hover {
+  fill: var(--link-hover);
 }
 
 .footer__link {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: 0.3s all;
+}
+
+.footer__link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
 }

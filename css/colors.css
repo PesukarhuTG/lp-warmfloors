@@ -1,6 +1,8 @@
 :root {
   --main-color: #232020;
+  --primary-color: #FFD952;
   --btn-second: #ffffff;
   --btn-second-hover: #FFD952;
   --border: #F8F8F8;
+  --link-hover: #898989;
 }
