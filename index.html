@@ -24,7 +24,7 @@
       <section class="hero section-offset">
         <div class="container hero__container">
           <div class="hero__content gray-block">
-            <h2 class="hero__title">Приносим тепло в&nbsp;каждый дом</h2>
+            <h2 class="hero__title title">Приносим тепло в&nbsp;каждый дом</h2>
             <p class="hero__description">Устанавливаем теплые полы в&nbsp;квартирах, офисах и&nbsp;загородных домах.</p>
             <a href="#calculator" class="button hero__link">Рассчитать&nbsp;стоимость</a>
           </div>
@@ -34,8 +34,21 @@
                 <div class="stretching hero__image" style="background-image: url('./assets/images/slider-01.png');">
                 </div>
               </div>
-              <button class="button hero__slider-btn hero__slider-btn_prev"></button>
-              <button class="button hero__slider-btn hero__slider-btn_next"></button>
+
+              <button class="hero__slider-btn hero__slider-btn_prev">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 13L1 7L7 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M13 7H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+
+              <button class="hero__slider-btn hero__slider-btn_next">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 13L13 7M13 7L7 1M13 7H1" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -43,7 +56,7 @@
 
       <section class="advantages section-offset">
         <div class="container advantages__container">
-          <h2 class="advantages__title">Наши преимущества</h2>
+          <h2 class="advantages__title title">Наши преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">Надежные материалы</li>
             <li class="advantages__item">Опытные монтажники</li>
@@ -51,14 +64,13 @@
             <li class="advantages__item">Защита от замыканий</li>
             <li class="advantages__item">Гарантия до 10 лет</li>
           </ul>
-
         </div>
       </section>
 
       <section id="calculator" class="calculator section-offset">
         <div class="container calculator__container">
           <div class="calculator__content gray-block">
-            <h2 class="calculator__title">Рассчитайте стоимость</h2>
+            <h2 class="calculator__title title">Рассчитайте стоимость</h2>
             <form class="calculator__form">
 
               <fieldset class="calculator__fieldset calculator__fieldset_sizes">

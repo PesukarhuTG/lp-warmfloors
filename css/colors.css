@@ -1,10 +1,14 @@
 :root {
   --main-color: #232020;
   --primary-color: #FFD952;
-  --btn-second: #ffffff;
+  --btn-second: #fff;
   --btn-second-hover: #FFD952;
   --border: #F8F8F8;
+  --border-primary-hover: #9E7B00;
   --accent-bgrnd: #F8F8F8;
   --link-hover: #898989;
-  --background: #ffffff;
+  --input-label-text: #898989;
+  --input-border: #E4E4E4;
+  --primary-hover: #FFC700;
+  --background: #fff;
 }
