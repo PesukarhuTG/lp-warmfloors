@@ -18,19 +18,22 @@
   grid-area: logo;
 }
 
+.footer__list {
+  display: flex;
+}
+
 .footer__social{
   grid-area: social;
-  display: flex;
   gap: 24px;
   justify-self: end;
+  padding-top: 8px;
 }
 
 .footer__contact{
   grid-area: contact;
-  display: flex;
   flex-direction: column;
   gap: 16px;
-  line-height: 1.5;
+  padding-top: 8px;
 }
 
 .footer__copyright{
@@ -39,7 +42,6 @@
 
 .footer__developers{
   grid-area: developers;
-  display: flex;
   flex-direction: column;
   gap: 8px;
   line-height: 1.5;
