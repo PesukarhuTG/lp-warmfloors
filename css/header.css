@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 
-.header__btn {
+button.header__btn {
   border: 1px solid var(--main-color);
   background-color: transparent;
 }
@@ -17,5 +17,4 @@
 .header__btn:hover {
   background-color: var(--btn-second-hover);
   border: 1px solid var(--btn-second-hover);
-  cursor: pointer;
 }

@@ -6,21 +6,107 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./assets/images/favicon.ico" rel="icon" type="image/x-icon" />
-  <title>Теплый пол - приносим комфорт в каждый дом</title>
+  <title>Тёплый пол - приносим комфорт в каждый дом</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
+      <h1 class="visually-hidden">Тёплый пол в каждый дом</h1>
       <div class="container header__container">
         <img class="header__logo" src="./assets/images/logo.svg" alt="Логотип компании Теплый пол">
-        <button class="header__btn">Заказать</button>
+        <button class="button header__btn">Заказать</button>
       </div>
     </header>
 
     <main class="main">
+      <section class="hero section-offset">
+        <div class="container hero__container">
+          <div class="hero__content gray-block">
+            <h2 class="hero__title">Приносим тепло в&nbsp;каждый дом</h2>
+            <p class="hero__description">Устанавливаем теплые полы в&nbsp;квартирах, офисах и&nbsp;загородных домах.</p>
+            <a href="#calculator" class="button hero__link">Рассчитать&nbsp;стоимость</a>
+          </div>
+          <div class="hero__slider-wrapper">
+            <div class="stretching">
+              <div class="stretching">
+                <div class="stretching hero__image" style="background-image: url('./assets/images/slider-01.png');">
+                </div>
+              </div>
+              <button class="button hero__slider-btn hero__slider-btn_prev"></button>
+              <button class="button hero__slider-btn hero__slider-btn_next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="advantages section-offset">
+        <div class="container advantages__container">
+          <h2 class="advantages__title">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">Надежные материалы</li>
+            <li class="advantages__item">Опытные монтажники</li>
+            <li class="advantages__item">Регулируемая температура пола</li>
+            <li class="advantages__item">Защита от замыканий</li>
+            <li class="advantages__item">Гарантия до 10 лет</li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section id="calculator" class="calculator section-offset">
+        <div class="container calculator__container">
+          <div class="calculator__content gray-block">
+            <h2 class="calculator__title">Рассчитайте стоимость</h2>
+            <form class="calculator__form">
+
+              <fieldset class="calculator__fieldset calculator__fieldset_sizes">
+                <label class="calculator__wrapper-input calculator__wrapper-input-sizes">
+                  <span class="calculator__text">Ширина помещения, м</span>
+                  <input type="number" class="calculator__input-number" name="width" required>
+                </label>
+                <label class="calculator__wrapper-input calculator__wrapper-input-sizes">
+                  <span class="calculator__text">Длина помещения, м</span>
+                  <input type="number" class="calculator__input-number" name="length" required>
+                </label>
+              </fieldset>
+
+              <fieldset class="calculator__fieldset calculator__fieldset_plans">
+                <legend class="calculator__text calculator__text-legend">Тариф</legend>
+                <label class="calculator__wrapper-input calculator__wrapper-input-plans">
+                  <input type="radio" class="calculator__input-radio" name="plan" value="econom">
+                  <span class="calculator__label-radio">Эконом</span>
+                </label>
+                <label class="calculator__wrapper-input calculator__wrapper-input-plans">
+                  <input type="radio" class="calculator__input-radio" name="plan" value="comfort" checked>
+                  <span class="calculator__label-radio">Комфорт</span>
+                </label>
+                <label class="calculator__wrapper-input calculator__wrapper-input-plans">
+                  <input type="radio" class="calculator__input-radio" name="plan" value="premium">
+                  <span class="calculator__label-radio">Премиум</span>
+                </label>
+              </fieldset>
+              <button class="button calculator__btn-submit" type="submit">Рассчитать</button>
+            </form>
+          </div>
+
+          <div class="calculator__total">
+            <div class="calculator__result-wrapper">
+              <p class="calc__result">
+                <span class="calculator__text">Площадь</span>
+                <span class="calculator__result-text">35 кв м</span>
+              </p>
+
+              <p class="calc__result">
+                <span class="calculator__text">Примерная стоимость</span>
+                <span class="calculator__result-text">42590 руб</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
