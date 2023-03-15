@@ -4,10 +4,16 @@
 @import './main.css';
 @import './footer.css';
 
-* {
+html {
+  box-sizing: border-box;
+  /*we use it here, because some plugins may have their own settings
+  and we don't have to rewrite them*/
+}
+
+*, *::after, *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -31,7 +37,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--main-color);
+  color: inherit;
 }
 
 ul {
