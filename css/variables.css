@@ -1,0 +1,6 @@
+:root {
+  --width-slide: 590px;
+  --height-slide: 530px;
+  --width-block: calc(50% - 10px);
+  --gap: 10px;
+}

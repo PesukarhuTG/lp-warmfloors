@@ -1,14 +1,15 @@
 @import './fonts.css';
 @import './colors.css';
+@import './variables.css';
 @import './header.css';
 @import './main.css';
 @import './footer.css';
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   /*we use it here, because some plugins may have their own settings
   and we don't have to rewrite them*/
-  scroll-behavior: smooth;
 }
 
 *, *::after, *::before {
