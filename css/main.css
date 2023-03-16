@@ -1,7 +1,0 @@
-@import './hero.css';
-@import './advantages.css';
-@import './calculator.css';
-
-.main {
-  flex: 1; /*push footer*/
-}

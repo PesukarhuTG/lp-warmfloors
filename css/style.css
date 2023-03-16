@@ -2,7 +2,9 @@
 @import './colors.css';
 @import './variables.css';
 @import './header.css';
-@import './main.css';
+@import './hero.css';
+@import './advantages.css';
+@import './calculator.css';
 @import './footer.css';
 
 html {
@@ -20,6 +22,10 @@ html {
 
 body {
   min-width: 300px;
+  min-height: 100vh; /*push footer */
+  display: flex; /*push footer */
+  flex-direction: column; /*push footer */
+  justify-content: space-between; /*push footer */
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -28,11 +34,11 @@ body {
   background-color: var(--background);
 }
 
-.wrapper {
-  min-height: 100vh; /*push footer*/
-  display: flex; /*push footer*/
-  flex-direction: column; /*push footer*/
-}
+/* .wrapper {
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column;
+} */
 
 .container {
   max-width: 1190px;
