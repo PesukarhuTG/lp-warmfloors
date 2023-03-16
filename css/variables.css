@@ -1,6 +1,27 @@
 :root {
   --width-slide: 590px;
-  --height-slide: 530px;
   --width-block: calc(50% - 10px);
   --gap: 10px;
+  --padding-gray: 50px;
+}
+
+@media (max-width: 1240px) {
+  :root {
+    --padding-gray: 30px;
+    --width-slide: 440px;
+  }
+}
+
+@media (max-width: 920px) {
+  :root {
+    --padding-gray: 24px;
+    --width-slide: 311px;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --padding-gray: 20px;
+    --gap: 4px;
+  }
 }

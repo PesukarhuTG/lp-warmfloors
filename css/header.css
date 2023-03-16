@@ -18,3 +18,9 @@ button.header__btn {
   background-color: var(--btn-second-hover);
   border: 1px solid var(--btn-second-hover);
 }
+
+@media (max-width: 920px) {
+  .header__logo {
+    width: 124px;
+  }
+}
