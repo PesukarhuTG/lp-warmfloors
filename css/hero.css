@@ -1,13 +1,29 @@
+.hero {
+  --width-slide: 590px;
+  --height-slide: 530px;
+  --width-block: calc(50% - 10px);
+  --gap: 10px;
+  overflow: hidden;
+}
+
 .hero__container {
   display: flex;
-  gap: 10px;
+  gap: var(--gap);
+  position: relative;
 }
 
 .hero__content {
-  flex-basis: 50%;
+  width: var(--width-block);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.hero__slider-block {
+  position: absolute;
+  /* left: calc(var(--width-block) + var(--gap) / 2); */
+  left: calc(var(--width-block) + var(--gap) + 7px);
+  width: calc(((var(--width-block) + var(--gap)) * 2) - var(--gap)); /* 'x2' means how many sliders we want to show */
 }
 
 .hero__title {
@@ -26,10 +42,12 @@
 
 .hero__arrows {
   position: absolute;
-  right: 50px;
+  left: calc(var(--width-slide) - 50px);
+  transform: translateX(-100%);
   bottom: 50px;
   display: flex;
   gap: 8px;
+  z-index: 2;
 }
 
 .hero__link:hover, .hero__slider-btn:hover {
@@ -37,11 +55,9 @@
   border: 1px solid var(--border-primary-hover);
 }
 
-.hero__slider-block {
-  flex-basis: 50%;
-}
-
 .hero__image {
+  width: var(--width-slide);
+  height: var(--height-slide);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
