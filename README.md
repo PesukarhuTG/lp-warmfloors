@@ -6,6 +6,7 @@
 
 ### Develompent:
 
-- create layout with responsive design
+- create a responsive layout
 - use [Swiper API](https://swiperjs.com/swiper-api) for slider
-
+- implement calculator
+- performance improvements: font preloading, image size decreasing, we no longer use CDN loading for Swiper
