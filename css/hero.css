@@ -39,9 +39,9 @@
 
 .hero__arrows {
   position: absolute;
-  left: calc(var(--width-slide) - var(--padding-gray));
+  left: calc(var(--width-slide) - var(--padding));
   transform: translateX(-100%);
-  bottom: var(--padding-gray);
+  bottom: var(--padding);
   display: flex;
   gap: 8px;
   z-index: 2;
@@ -110,11 +110,12 @@
   .hero__slider-block {
     position: static;
     height: 280px;
+    width: 100%;
   }
 
   .hero__arrows {
     left: auto;
-    right: var(--padding-gray);
+    right: var(--padding);
     transform: none;
   }
 }
