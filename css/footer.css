@@ -62,11 +62,16 @@
   align-items: center;
   gap: 8px;
   transition: 0.3s all;
+  outline: none;
 }
 
 .footer__link:hover {
   color: var(--link-hover);
   text-decoration: underline;
+}
+
+.footer__link:focus-visible {
+  border: 1px solid var(--input-label-text);
 }
 
 @media (max-width: 1240px) {

@@ -2,6 +2,7 @@ const calculatorForm = document.querySelector('.calculator__form');
 const totalSquare = document.querySelector('.js-total-square');
 const totalSum = document.querySelector('.js-total-sum');
 const resultInfo = document.querySelector('.js-result-info');
+const btnSubmit = document.querySelector('.js-submit');
 
 const plans = {
   'econom': 550,
@@ -10,6 +11,10 @@ const plans = {
 }
 
 const calculator = () => {
+  calculatorForm.addEventListener('input', () => {
+    btnSubmit.disabled = !(calculatorForm.width.value > 0 && calculatorForm.length.value > 0);
+  })
+
   calculatorForm.addEventListener('submit', (e) => {
     e.preventDefault();
 

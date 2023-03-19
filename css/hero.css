@@ -47,9 +47,23 @@
   z-index: 2;
 }
 
+.hero__slider-btn {
+  outline: none;
+  transition: 0.3s all;
+}
+
 .hero__link:hover, .hero__slider-btn:hover {
   background-color: var(--primary-hover);
-  border: 1px solid var(--border-primary-hover);
+  border: 1px solid var(--primary-hover);
+}
+
+.hero__slider-btn:focus-visible {
+  border-color: var(--border-primary-focus);
+}
+
+.hero__slider-btn:active {
+  background-color: var(--border-primary-hover);
+  border-color: var(--border-primary-hover);
 }
 
 .hero__image {

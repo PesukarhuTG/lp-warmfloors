@@ -1,14 +1,18 @@
 :root {
   --main-color: #232020;
-  --primary-color: #FFD952;
+  --primary-color: #FFC700;
   --btn-second: #fff;
   --btn-second-hover: #FFD952;
   --border: #F8F8F8;
   --border-primary-hover: #9E7B00;
+  --border-primary-focus: #9E7B00;
   --accent-bgrnd: #F8F8F8;
   --link-hover: #898989;
   --input-label-text: #898989;
   --input-border: #E4E4E4;
-  --primary-hover: #FFC700;
+  --order-focus: #FFC700;
+  --primary-hover: #FFD952;
   --background: #fff;
+  --btn-color-disabled: #898989;
+  --btn-bgr-disabled: #E0E0E0;
 }

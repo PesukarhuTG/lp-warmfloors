@@ -69,7 +69,28 @@ img {
   text-transform: uppercase;
   background-color: var(--primary-color);
   transition: 0.3s all;
+  outline: none;
   cursor: pointer;
+}
+
+.button:focus-visible {
+  border-color: var(--border-primary-focus);
+}
+
+.button:hover {
+  background-color: var(--btn-second-hover);
+  border-color: var(--btn-second-hover);
+}
+
+.button:active {
+  transform: translate(2px, 2px);
+}
+
+.button:disabled {
+  pointer-events: none;
+  color: var(--btn-color-disabled);
+  background-color: var(--btn-bgr-disabled);
+  border-color: var(--btn-bgr-disabled);
 }
 
 .section-offset {

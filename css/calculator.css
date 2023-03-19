@@ -38,6 +38,15 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  outline: none;
+}
+
+.calculator__input-number::-webkit-inner-spin-button {
+  display: none;
+}
+
+.calculator__input-number:hover, .calculator__input-number:focus {
+  border: 1px solid var(--primary-color);
 }
 
 .calculator__fieldset_plans {
@@ -67,6 +76,13 @@
   height: 24px;
   position: relative;
   margin-right: 8px;
+  outline-color:var(--primary-color);
+  cursor: pointer;
+}
+
+.calculator__input-radio:hover {
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
 }
 
 .calculator__input-radio::before {
