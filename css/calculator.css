@@ -122,7 +122,7 @@
   display: flex;
   align-items: flex-end;
   padding: var(--padding);
-  background: #333 url('../assets/images/calculator-img.jpg') center/cover no-repeat;
+  background: #333 url('../assets/images/calculator-img.webp') center/cover no-repeat;
   border-radius: 12px;
 }
 
