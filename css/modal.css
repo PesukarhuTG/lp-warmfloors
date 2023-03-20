@@ -95,3 +95,60 @@
 .modal__close:hover {
   background-color: var(--primary-hover);
 }
+
+.modal__input-error {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+}
+
+@media (max-width: 920px) {
+  .modal__container::after {
+    flex: 0 0 192px;
+    background-image: url('../assets/images/modal-bg-tablet.webp');
+  }
+
+  .modal__content {
+    padding: 24px;
+  }
+
+  .modal__title {
+    max-width: 360px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  
+  .modal__subtitle {
+    max-width: 330px;
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .modal__input {
+    height: 36px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .modal__container {
+    flex-direction: column;
+  }
+
+  .modal__container::after {
+    display: block;
+    background-image: url('../assets/images/modal-bg-mobile.webp');
+  }
+
+  .modal__content {
+    padding: 40px 20px 20px;
+  }
+
+  .modal__fieldset {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

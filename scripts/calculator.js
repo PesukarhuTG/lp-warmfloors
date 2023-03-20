@@ -3,6 +3,7 @@ const totalSquare = document.querySelector('.js-total-square');
 const totalSum = document.querySelector('.js-total-sum');
 const resultInfo = document.querySelector('.js-result-info');
 const btnSubmit = document.querySelector('.js-submit');
+const btnOrder = document.querySelector('.calculator__btn-order');
 
 const plans = {
   'econom': 550,
@@ -22,7 +23,8 @@ const calculator = () => {
       const square = calculatorForm.width.value * calculatorForm.length.value;
       let sum = square * plans[calculatorForm.plan.value];
 
-      resultInfo.style.display = 'block';
+      resultInfo.classList.add('calculator__result-wrapper_show');
+      btnOrder.classList.add('calculator__btn-order_show');
 
       totalSquare.textContent = `${square} кв м`;
       totalSum.textContent = `${sum} ₽`;

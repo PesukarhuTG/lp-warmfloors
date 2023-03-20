@@ -134,6 +134,18 @@
   border-radius: 8px;
 }
 
+.calculator__btn-order {
+  display: none;
+}
+
+.calculator__result-wrapper_show {
+  display: block;
+}
+
+.calculator__btn-order_show {
+  display: inline-block;
+}
+
 .calculator__result {
   display: flex;
   align-items: flex-end;
@@ -219,7 +231,7 @@
   } 
 
   .calculator__total {
-    min-height: auto;
+    min-height: 128px;
   }
 
   .calculator__result-wrapper {
@@ -229,7 +241,7 @@
   .calculator__result {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   .calculator__wrapper-input-plans {
